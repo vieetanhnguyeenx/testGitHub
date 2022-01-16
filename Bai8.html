@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- BEM : Block Element Modifier -->
+    <!-- Đặt tên chuẩn BEM -->
+    <!-- 
+        Laptop : Block
+        Keyboard, Mouse, Touchpad, Screen : Element
+        Laptop big, Laptop small : Modifier for Block
+        Small Keyboard, Small screen : Modifier for Element
+
+        Block__Element--modifier
+        Block--modifier
+        Block__Element
+
+        Laptop
+        laptop__keyboard, laptop__touchpad, laptop__screen
+        laptop--small, laptop--expensive, laptop--big
+        laptop_touchpad--smooth, laptop__screen--scale
+
+
+     -->
+    <!-- ex1: 
+        Block: Flash-mesage
+        Element: image, title, description(desc), button
+        Modifier: primary, secondary
+    -->
+
+    <!-- 
+        block 1 & 2:
+        flash-mesage
+        flash-masage__image, flash-mesage__title, flash-masage__desc, flash-masage__button
+
+        block 1: flash-masage__image--primary, flash-masage__title--primary
+        block 2: flash-masage__image--secondary, flas-masage__title--secondary
+     -->
+    
+     <button class="flash-masage__button flash-masage__button--primary">a</button>
+     <h2 class="flash-mesage__title flash-masage__title--primary">HelloWorld!</h2>
+
+</body>
+</html>
